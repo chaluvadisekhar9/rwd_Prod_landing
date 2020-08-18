@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product landing page</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            list-style-type: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: whitesmoke;
+        }
+        #header{
+            height: 100px;
+            width: 100%;
+            background-color: darkorange;   
+            display: flex;
+        }
+        #logo{
+            height: 100px;
+            width: 12%; 
+            text-align: center; 
+        }
+        #header-img{
+            height: 80px;
+            width: 80px;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        #nav-bar{
+            height: 100px;
+            width: 88%;      
+        }
+        #nav-bar ul{
+            height: 100px;
+        }
+        #nav-link{
+            height:50px;
+            line-height: 50px;
+            width: 120px;
+            display: inline-flex;
+            position: relative;        
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);  
+            border-radius: 5px; 
+            
+        }
+        ul li:hover{
+            background:#f8cb3b;
+        }
+        #nav-link a{
+            text-decoration: none;
+            color: white;
+            padding-left: 25px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        input{
+            height: 40px;
+            width: 100%;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        #main{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            background-color: #0a0a23;
+        }
+        #section-1{
+            height: 800px;
+            width:40%;
+        }
+        #section-2{
+            height: 800px;
+            width:60%;
+        }
+        #form-id{
+            width: 70%;
+            height: 450px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #996600;
+            overflow: inherit;
+            border-radius: 10px;
+            color: white;
+        }
+        #form-id p{
+            text-align: left;
+            padding: 5px 5px 5px 0px;
+            font-size: 20px;   
+            font-weight: 300; 
+        }
+        #submit{
+            padding: 10px;
+        }
+        #submit input{
+            width: 100%;
+            height: 45px;
+            font-size: 20px; 
+            border-radius: 6px;
+            color: #0a0a23;
+        }
+        #footer{
+            height: 100px;
+            background-color: #f8cb3b;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        #video-id{
+            width: 85%;
+            height: 450px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #996600;
+            border-radius: 10px;
+            color: white;
+        }
+        #video-id h2{
+            font-size: 30px;
+            padding: 10px;
+        }
+        #form-id h2{
+            padding-bottom: 30px;
+        }
+        input[type="text"]{
+            border-radius: 6px;
+        }
+        #video-id iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #iframe-container{  
+            position: relative;
+            padding-bottom: 55%;
+            height: 0px;
+        }
+        #iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        }
+        @media screen and (max-width: 700px) {
+        #header{
+            height: 400px;
+            display:block;
+        }
+        #logo{
+            width: 100%;
+            background-color: #0a0a23;
+            text-align: center;
+        }
+        #nav-bar{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 360px;
+        }
+        #nav-link{
+            display:block;
+            height: 100px;
+            text-align: center;
+            width: 100%;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 100px;
+        }
+        #main{
+            display: block;
+            height: 1200px;
+            width: 100%;
+        }
+        #section-1{
+            width: 100%;
+            height: 600px;
+            display: block;
+        }
+        #section-2{
+            width: 100%;
+            height: 600px;
+            display: block;
+            margin: auto;
+        }
+        #p-id{
+            width: 100%;
+            height: 400px;
+        }
+        #video-id{
+            height: 500px;
+            width: 70%; 
+            display: block;
+            margin: auto;
+        }
+        #iframe-container{  
+            position: relative;
+            padding-bottom: 70%;
+            height: 0px;
+        }
+        #iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wraper">
+    <div id="header">
+        <div id="logo"><img src="logo.jpg" alt="logo" id="header-img"></div>
+        <nav id="nav-bar">
+            <ul>
+                <li id="nav-link"><a href="#">Home</a></li>
+                <li id="nav-link"><a href="#">Services</a></li>
+                <li id="nav-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>  
+    </div>
+    <div id="main">
+        <div id="section-1">
+            <form action="" id="form-id">
+                <h2>Register Your Details With Us</h2>
+               <p>First Name:</p> 
+               <div><input type="text" name="first name" placeholder="First name"></div>
+               <p>Last Name:</p> 
+               <div><input type="text" name="last name" placeholder="Last name"></div>
+               <p>Email Address:</p> 
+               <div><input type="text" name="email" placeholder="Email address"></div>
+               <p>Contact No:</p> 
+               <div><input type="text" name="contact no" placeholder="Contact Number"></div>
+               <div id="submit"><input type="submit" value="Register With Us"></div>
+            </form>
+        </div>
+        <div id="section-2">
+            <div id="video-id">
+                <h2>Our Services</h2>
+                <div id="iframe-container"><iframe id="p-id" width="700" height="400" src="https://www.youtube.com/embed/Aq7c7aPAdko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>@2020 Privacy, All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>
